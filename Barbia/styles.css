@@ -1,0 +1,466 @@
+body {
+    background-image: url('../images/background.jpeg'); /* Adjust the path based on your file structure */
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+	background-color: blanchedalmond;
+	min-height: 2000px;
+}
+ 
+.header {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border: 6mm ridge rgba(230, 62, 127, .6);  padding: 0.5em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-image: url('../images/fbackbar.jpeg');
+}
+
+
+/* Apply the animation to the navigation links on hover */
+nav a:hover {
+    animation: glow 1s infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+.nav-container {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-container ul li {
+        display: block;
+        margin: 10px 0; }}
+		
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-family: penna;
+    font-size: 70px;
+}
+
+/* Keyframes for glowing and changing colors */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff6600, 0 0 40px #ff6600, 0 0 50px #ff6600, 0 0 60px #ff6600, 0 0 70px #ff6600;
+        color: #fff;
+    }
+    50% {
+        text-shadow: none;
+        color: #e53f82;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e53f82, 0 0 40px #e53f82, 0 0 50px #e53f82, 0 0 60px #e53f82, 0 0 70px #e53f82;
+        color: #fff;
+    }
+}
+
+footer {
+    background-color: #7f3f74;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	  left: 0;
+}
+
+
+.dropbtn {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d582a0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  border-radius: 10px;
+  right: 0; 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none; /* Remove the border from the last item */
+}
+
+.dropdown-content a:hover {background-color: #cccf30}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+
+
+.logo {
+  position: relative;
+  width: 33%;
+  height: auto;
+  transform: translate(-50%, -15%);
+  top: 90%;
+	left: 15%;
+}
+
+.qr {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.qr img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+  }
+
+
+.left-column {
+	width: 65%;
+	position: relative;
+  }
+   
+  .right-column {
+	width: 35%;
+	margin-top: 60px;
+  }
+
+
+  .left-column img {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.3s ease;
+  }
+   
+  .left-column img.active {
+	opacity: 1;
+  }
+
+  product-description {
+	border-bottom: 1px solid #E1E8EE;
+	margin-bottom: 20px;
+  }
+  .product-description span {
+	font-size: 12px;
+	color: #358ED7;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+  }
+  .product-description h1 {
+	font-weight: 300;
+	font-size: 52px;
+	color: #43484D;
+	letter-spacing: -2px;
+  }
+  .product-description p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #86939E;
+	line-height: 24px;
+  }
+
+  .product-color {
+	margin-bottom: 30px;
+  }
+   
+  .color-choose div {
+	display: inline-block;
+  }
+   
+  .color-choose input[type="radio"] {
+	display: none;
+  }
+   
+  .color-choose input[type="radio"] + label span {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+  }
+   
+  .color-choose input[type="radio"]#red + label span {
+	background-color: #C91524;
+  }
+  .color-choose input[type="radio"]#blue + label span {
+	background-color: #314780;
+  }
+  .color-choose input[type="radio"]#black + label span {
+	background-color: #323232;
+  }
+   
+  .color-choose input[type="radio"]:checked + label span {
+	background-image: url(images/check-icn.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+
+
+  .cable-choose {
+	margin-bottom: 20px;
+  }
+   
+  .cable-choose button {
+	border: 2px solid #E1E8EE;
+	border-radius: 6px;
+	padding: 13px 20px;
+	font-size: 14px;
+	color: #5E6977;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all .5s;
+  }
+   
+  .cable-choose button:hover,
+  .cable-choose button:active,
+  .cable-choose button:focus {
+	border: 2px solid #86939E;
+	outline: none;
+  }
+   
+  .cable-config {
+	border-bottom: 1px solid #E1E8EE;
+	margin-bottom: 20px;
+  }
+   
+  .cable-config a {
+	color: #358ED7;
+	text-decoration: none;
+	font-size: 12px;
+	position: relative;
+	margin: 10px 0;
+	display: inline-block;
+  }
+   
+  .cable-config a:before {
+	content: "?";
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: 2px solid rgba(53, 142, 215, 0.5);
+	display: inline-block;
+	text-align: center;
+	line-height: 16px;
+	opacity: 0.5;
+	margin-right: 5px;
+  }
+
+
+  .product-price {
+	display: flex;
+	align-items: center;
+  }
+   
+  .product-price span {
+	font-size: 26px;
+	font-weight: 300;
+	color: #43474D;
+	margin-right: 20px;
+  }
+   
+  .cart-btn {
+	display: inline-block;
+	background-color: #7DC855;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 12px 30px;
+	transition: all .5s;
+  }
+  .cart-btn:hover {
+	background-color: #64af3d;
+  }
+
+
+
+  @media (max-width: 940px) {
+	.container {
+	  flex-direction: column;
+	  margin-top: 60px;
+	}
+   
+	.left-column,
+	.right-column {
+	  width: 100%;
+	}
+   
+	.left-column img {
+	  width: 300px;
+	  right: 0;
+	  top: -65px;
+	  left: initial;
+	}
+  }
+   
+  @media (max-width: 535px) {
+	.left-column img {
+	  width: 220px;
+	  top: -85px;
+	}
+  }
+
+
+
+
+/* Container */
+.v-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/* Contact Section */
+.contact-section {
+    width: 45%; /* Adjust as needed */
+}
+
+/* Contact Form */
+.contact-section form {
+    margin-top: 20px;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section form input[type="text"],
+.contact-section form input[type="email"],
+.contact-section form textarea {
+    width: 88%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Icons */
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    margin-right: 10px;
+}
+
+.contact-icons img {
+    width: 80px;
+    height: auto;
+}
+
+
+/* Services Section */
+.services-section {
+  max-width: 800px;
+  margin: 5 auto;
+  padding: 20px;
+}
+
+.services-section h2 {
+  color: #37065a;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.services-section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.services-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services-section ul li {
+  margin-bottom: 10px;
+}
+
+.services-section ul li strong {
+  color: #37065a;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  margin-left: 5px; /* Adjust as needed */
+}

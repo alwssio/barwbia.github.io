@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Header</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="min-height: auto;">
+    <header class="header">
+        <h1>Barbia</h1>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="index.html">Home 台</a></li>
+                    <li class="dropdown">
+                        <a href="../product.html" class="dropbtn">Products 💘</a>
+                        <div class="dropdown-content">
+                            <a href="#">Product 1</a>
+                            <a href="#">Product 2</a>
+                            <a href="#">Product 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../services.html" class="dropbtn">Services 💼</a>
+                        <div class="dropdown-content">
+                            <a href="#">Service 1</a>
+                            <a href="#">Service 2</a>
+                            <a href="#">Service 3</a>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html">Contact  📥</a></li>
+                </ul>
+            </nav>        
+    </header>
+
+</header>
+
+
+<main class="container">
+
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+      <img data-image="black" src="images/black.png" alt="">
+      <img data-image="blue" src="images/blue.png" alt="">
+      <img data-image="red" class="active" src="images/red.png" alt="">
+    </div>
+   
+   
+    <!-- Right Column -->
+    <div class="right-column">
+   
+      <!-- Product Description -->
+      <div class="product-description">
+        <span>Letra</span>
+        <h1>Letra Barbia</h1>
+        <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+      </div>
+   
+      <!-- Product Configuration -->
+      <div class="product-configuration">
+   
+        <!-- Product Color -->
+        <div class="product-color">
+          <span>Stili</span>
+   
+          <div class="color-choose">
+            <div>
+              <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+              <label for="red"><span></span></label>
+            </div>
+            <div>
+              <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+              <label for="blue"><span></span></label>
+            </div>
+            <div>
+              <input data-image="black" type="radio" id="black" name="color" value="black">
+              <label for="black"><span></span></label>
+            </div>
+          </div>
+   
+        </div>
+   
+        <!-- Cable Configuration -->
+        <div class="cable-config">
+          <span>Sasia ne KG</span>
+   
+          <div class="cable-choose">
+            <button>100</button>
+            <button>500</button>
+            <button>10k</button>
+          </div>
+   
+          <a href="#">How to configurate your headphones</a>
+        </div>
+      </div>
+   
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <span>489$</span>
+        <a href="#" class="cart-btn">Shto Ne Shporte</a>
+      </div>
+    </div>
+  </main>
+
+
+<script src="main.js"></script>
+</body>
+<footer>
+  <p>&copy; 2024 Barbis ShPK</p>
+</footer>
+</html>
